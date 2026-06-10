@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Exemplo de formulário com vários campos</h1>
+
+    <form action="#" method="get">
+
+        <label for="nome">Nome*</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Ex: teste@teste.com"><br><br>
+
+        <label for="senha">Senha</label><br>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <label for="cpf">CPF</label><br>
+        <input type="text" id="cpf" name="cpf" 
+            placeholder="000.000.000-00" pattern="\d{3}.\d{3}.\d{3}-\d{2}">
+
+        <h3>Sessão selecionáveis</h3>
+
+        <input type="checkbox" id="credenciais" name="credenciais">
+        <label for="credenciais">Lembrar das minhas credenciais</label><br>
+
+        <input type="checkbox" id="darkmode" name="darkmode" checked>
+        <label for="darkmode">Ativar dark mode ao entrar no sistema</label><br>
+        <br>
+
+        <input type="radio" id="manha" name="turno">
+        <label for="manha">Manhã</label><br>
+
+        <input type="radio" id="tarde" name="turno">
+        <label for="tarde">Tarde</label><br>
+
+        <input type="radio" id="noite" name="turno" checked>
+        <label for="noite">Noite</label><br><br>
+
+        <label for="aniversario">Data de aniversario</label><br>
+        <input type="date" id="aniversario" name="aniversario"><br><br>
+
+        <label for="formacao">Escolha sua formação</label>
+        <select name="formacao" id="formacao">
+            <option value="1">Frontend Developer</option>
+            <option value="2">Backend Developer</option>
+            <option value="3">Fullstack Developer</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Enviar</button>
+
+        <p>
+            * Campos obrigatórios
+        </p>
+
+    </form>
+    
+</body>
+</html>
